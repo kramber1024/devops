@@ -23,7 +23,7 @@ services:
       dockerfile: Dockerfile.fastapi
     depends_on:
       postgres:
-        condition: service_healthy
+        condition: service_started
     ports:
       - "8000:8000"
     environment:
