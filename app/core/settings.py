@@ -5,7 +5,7 @@ class _DatabaseSettings(BaseSettings):
     SCHEME: str = "postgresql+asyncpg://"
     USER: str = "admin"
     PASSWORD: str = "admin"
-    HOST: str = "localhost"
+    HOST: str = "postgres"
     PORT: int = 5432
     DB_NAME: str = "postgres"
     URL: str = f"{SCHEME}{USER}:{PASSWORD}@{HOST}:{PORT}/{DB_NAME}"
