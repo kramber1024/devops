@@ -48,6 +48,6 @@ class Database:
             await connection.run_sync(Model.metadata.create_all)
 
 
-db: Database = Database(
+database: Database = Database(
     url=settings.database.URL,
 )
