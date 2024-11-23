@@ -8,7 +8,7 @@ type _FirstName = Annotated[
     str,
     StringConstraints(
         strip_whitespace=True,
-        min_length=64,
+        min_length=1,
         max_length=64,
     ),
     Field(
@@ -21,7 +21,7 @@ type _LastName = Annotated[
     str,
     StringConstraints(
         strip_whitespace=True,
-        min_length=64,
+        min_length=1,
         max_length=64,
     ),
     Field(
